@@ -2,11 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 function Book({ book }) {
+  const { title, author, imageUrl } = book;
   return (
     <>
-      <p>{book.title}</p>
-      <p>{book.author}</p>
-      <img src={book.imageUrl}/>
+      <p>{title}</p>
+      <p>{author}</p>
+      <img src={imageUrl}/>
     </>
   );
 }
