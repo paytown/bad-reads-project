@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import HomeDisplay from '../components/HomeDisplay';
-import { getBooks } from '../selectors/BookSelector';
+import { getBooks } from '../selectors/bookSelector';
 import { addBook } from '../actions/bookActions';
 
 const mapStateToProps = state => ({
