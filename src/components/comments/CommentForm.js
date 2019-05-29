@@ -3,10 +3,11 @@ import PropTypes from 'prop-types';
 
 export default class CommentForm extends PureComponent {
   static propTypes = {
-    onSubmit: PropTypes.func.isRequired
+    onSubmit: PropTypes.func.isRequired,
+
   }
   state = {
-    text: ''
+    text: '',
   }
 
   handleSubmit = event => {

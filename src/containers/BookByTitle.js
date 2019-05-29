@@ -6,7 +6,6 @@ const mapStateToProps = (state, props) => ({
   book: getBook(state, props.match.params.title)
 });
 
-
 export default connect(
   mapStateToProps,
   null
