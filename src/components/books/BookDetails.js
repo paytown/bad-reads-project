@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import CreateComment from '../../containers/CreateComment';
-// import AllComments from '../../containers/AllComments';
+import AllComments from '../../containers/AllComments';
 
 function BookDetails({ book }) {
   return (
@@ -12,7 +12,10 @@ function BookDetails({ book }) {
         <img src={book.imageUrl}/>
       </div>
       <div>
-        <CreateComment bookTitle={book.title}/>
+        <CreateComment bookTitle={book.title} />
+      </div>
+      <div>
+        <AllComments bookTitle={book.title} />
       </div>
     </section>
   );

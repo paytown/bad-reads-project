@@ -4,10 +4,10 @@ import { getComments } from '../selectors/commentSelector';
 import Comments from '../components/comments/Comments';
 
 const mapStateToProps = (state, props) => ({
-  comments: getComments(state, props.match.params.id)
+  comments: getComments(state, props.bookTitle)
 });
 
 export default withRouter(connect(
   mapStateToProps,
   null
-))(Comments);
+)(Comments));

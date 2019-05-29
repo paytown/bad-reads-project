@@ -8,9 +8,10 @@ export default function reducer(state = initialState, action) {
       return { 
         ...state, 
         [action.payload.bookTitle]: [
-          ...state(state[action.payload.bookTitle] || []),
+          ...(state[action.payload.bookTitle] || []),
           action.payload.text
-        ] };
+        ]
+      };
     default:
       return state;
   }
